@@ -4,7 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>On The Water</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .slider {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 9s infinite linear;
+        }
+        .slides img {
+            width: 100%;
+            height: 300px;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #2CA8C8;
+            padding: 5px 10px;
+            border: 1px solid #2CA8C8;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 40px;
+            color: #2CA8C8;
+        }
+        .content h1 {
+            font-size: 28px;
+        }
+        .content p {
+            font-size: 16px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .footer {
+            background: #2CA8C8;
+            color: white;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -20,15 +87,17 @@
         </div>
     </div>
     <nav class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="trips.html">Trips</a>
-        <a href="booking.html">Booking</a>
-        <a href="boat.html">Boat</a>
-        <a href="about.html">About</a>
+        <a href="#">Trips</a>
+        <a href="#">Booking</a>
+        <a href="#">Boat</a>
+        <a href="#">About</a>
     </nav>
     <section class="content">
         <h1>On The Water</h1>
-        <p>Experience amazing boat trips along the Athenian Riviera.</p>
+        <h2>Day and half/day boat trips along the Athenian Riviera and the surrounding coastline and islands.</h2>
+        <p>
+            Live the experience and enjoy unique landscapes, crystal clear waters and the sun at secluded spots or have a taste of the Athenian Riviera lifestyle the proper way, by sea, on the water. Whether you're looking for some relaxing time under the Greek sun or having fun along the most vibrant summer spots, our skippers will make sure you'll have a safe and fulfilling time. Our boats are conveniently located along both the south coast and the east coast of Attica to accommodate your needs depending on your location or destination.
+        </p>
     </section>
     <footer class="footer">
         OnTheWater | Tel: +30 698 4111 94 | Email: <a href="mailto:info@onthewater.gr" style="color: white;">info@onthewater.gr</a> | Working Hours: 9:00 - 20:00
